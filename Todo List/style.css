@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:poppins;
+}
+html , body{
+   height: 100%;
+    width: 100%;
+}
+:root{
+    --todolistcolor:#FFC3C4;
+    --notes:#FDAB96;
+    --focus:#ABDDDB;
+    --remember:#628280;
+    --mainbg:#dadada;
+}
+#todo-app-container{
+    width:100%;
+    height:100vh;
+    background-color: var(--mainbg);
+    position:relative;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top:1rem; */
+    /* prevented from margin collapse */
+    
+}
+#hero-section{
+    width:900px;
+    height:90%;
+    background-color:#FFFFFF;
+    border-radius:15px;
+    padding-inline:1rem;
+
+}
+.hero-section-inner-container{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.topic{
+    text-align:center;
+    font-weight:600;
+    letter-spacing:1.5px;
+}
+.line{
+    position:absolute;
+    width:250px;
+    height:200px;
+    top:-3%;
+    left:50%;
+    transform:translateX(-50%);
+}
+.line img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
